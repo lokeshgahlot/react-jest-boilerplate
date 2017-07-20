@@ -18,7 +18,7 @@
     "react": "^15.6.0",
     "react-dom": "^15.3.2"
   },
-  "devDependencies": {
+  "yarn ": {
     "babel-core": "^6.17.0",
     "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.0",
@@ -51,6 +51,7 @@
     "verbose": true,
     "transform": {
       "^.+\\.js?$": "babel-jest"
-    }
+    },
+    "moduleDirectories": ["node_modules", "./app"]
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 
 //import Main from '../main'
-import Main from './index'
+import Main from 'components/main';
 
 describe('<Main />', ()=> {
   const wrapper = shallow(<Main />)
