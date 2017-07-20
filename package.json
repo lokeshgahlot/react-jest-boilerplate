@@ -52,6 +52,7 @@
     "transform": {
       "^.+\\.js?$": "babel-jest"
     },
-    "moduleDirectories": ["node_modules", "./app"]
+    "moduleDirectories": ["node_modules", "./app"],
+    "roots": ["<rootDir>/app/"]
   }
 }
