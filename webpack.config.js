@@ -48,10 +48,6 @@ module.exports = {
     rules: [
       {
         loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015', 'es2016', 'es2017', 'stage-0'],
-					plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
-        },
         test: /\.js?$/,
         exclude: /(node_modules|bower_components)/
       },

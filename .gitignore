@@ -8,4 +8,5 @@ sample-files/
 npm-debug.log
 */**/npm-debug.log
 bower_components/
+flow-typed/
 */**/bower_components/
