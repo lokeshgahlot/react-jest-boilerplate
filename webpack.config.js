@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
-var CompressionPlugin = require("compression-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -28,7 +29,8 @@ module.exports = {
 			test: /bundle.js$/,
 			//threshold: 10240,
 			minRatio: 0.8
-		})
+		}),
+    new ExtractTextPlugin('bundle.css')
   ],
   output: {
     path: __dirname + '/public/',
@@ -66,6 +68,15 @@ module.exports = {
       }, {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: "url?limit=10000&mimetype=image/svg+xml"
+      },{
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            'sass-loader',
+          ],
+        }),
       }
     ]
   },
