@@ -7,4 +7,4 @@
 - Use `yarn dev` command to run the project in development environment.
 - Use `yarn build` command to run the project in production environment.
 - Use `yarn test` command to run tests.
-- Build creates bundle.js and bundle.gz.js int the public folder
+- Build creates bundle.js and bundle.gz.js in the public folder.
